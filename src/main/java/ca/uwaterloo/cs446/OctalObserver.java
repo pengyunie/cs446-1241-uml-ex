@@ -1,12 +1,19 @@
 package ca.uwaterloo.cs446;
 
-abstract public class OctalObserver {
+abstract public class OctalObserver extends Observer {
     private String octValue;
 
     // constructor wtih an argument
-    abstract public OctalObserver(Subject subject);
+    abstract public OctalObserver(Subject subject) {
+        this.subject = subject;
+        subject.attach(this);
+    }
 
-    abstract void update();
+    abstract void update() {
+        this.octValue = Integer.toOctalString(subject.getState())
+    }
 
-    abstract String getValue();
+    abstract String getValue() {
+        return this.octValue;
+    }
 }
