@@ -5,7 +5,7 @@ public class NumberSubject extends Subject {
     private int state;
 
     // constructor wtih an argument
-    public void NumberSubject(int state){
+    public NumberSubject(int state){
         this.state = state;
     }
 
