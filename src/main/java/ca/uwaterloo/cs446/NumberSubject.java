@@ -1,6 +1,6 @@
 package ca.uwaterloo.cs446;
 
-abstract public class NumberSubject {
+abstract public class NumberSubject extends Subject {
     
     private int state;
 
@@ -11,5 +11,6 @@ abstract public class NumberSubject {
 
     abstract void setState(int state) {
         this.state = state;
+        this.sendNotice();
     }
 }
