@@ -2,7 +2,7 @@ package ca.uwaterloo.cs446;
 
 public class OctalObserver extends Observer {
     private String octValue = null;
-    public void OctalObserver(Subject subject) {
+    OctalObserver(Subject subject) {
         this.subject = subject;
     }
     public void update() {
