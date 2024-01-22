@@ -1,4 +1,5 @@
 package ca.uwaterloo.cs446;
+import java.util.*;
 
 public abstract class Subject {
     private LinkedList<Observer> observers = new LinkedList<Observer>();
