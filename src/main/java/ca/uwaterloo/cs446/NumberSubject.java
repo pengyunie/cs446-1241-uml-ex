@@ -9,5 +9,7 @@ abstract public class NumberSubject {
 
     abstract int getState();
 
-    abstract void setState(int state);
+    abstract void setState(int state) {
+        this.state = state;
+    }
 }
