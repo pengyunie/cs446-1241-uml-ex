@@ -1,5 +1,8 @@
 package ca.uwaterloo.cs446;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Subject {
 
     private List <Observer> observers = new LinkedList<>();
