@@ -6,7 +6,7 @@ public abstract class Subject {
         this.observers.add(observer);
     }
     public void sendNotice() {
-        for (o : observers) {
+        foreach (o : observers) {
             o.update();
         }
     }
