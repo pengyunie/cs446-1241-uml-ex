@@ -1,6 +1,6 @@
 package ca.uwaterloo.cs446;
 
-abstract public class Subject {
+public class Subject {
 
     private List <Observer> observers = new LinkedList<>();
     
@@ -9,9 +9,7 @@ abstract public class Subject {
     }
 
     public void sendNotice() {
-        for (Observer observer : observers) {
-            observer.update();
-        }
+        this.observers.forEach(Observer::update);
     }
 
     abstract int getState();

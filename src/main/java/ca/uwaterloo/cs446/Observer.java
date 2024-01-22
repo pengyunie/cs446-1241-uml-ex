@@ -1,6 +1,6 @@
 package ca.uwaterloo.cs446;
 
-abstract public class Observer {
+public class Observer {
 
     private Subject subject;
 

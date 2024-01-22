@@ -1,6 +1,6 @@
 package ca.uwaterloo.cs446;
 
-abstract public class OctalObserver extends Observer {
+public class OctalObserver extends Observer {
     private String octValue = "";
 
     // constructor wtih an argument

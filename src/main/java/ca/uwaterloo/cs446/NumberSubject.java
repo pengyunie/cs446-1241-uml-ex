@@ -1,6 +1,6 @@
 package ca.uwaterloo.cs446;
 
-abstract public class NumberSubject extends Subject {
+public class NumberSubject extends Subject {
     
     private int state;
 
