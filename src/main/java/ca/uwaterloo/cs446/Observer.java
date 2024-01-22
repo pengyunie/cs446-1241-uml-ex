@@ -1,8 +1,8 @@
 package ca.uwaterloo.cs446;
 
-public class Observer {
+abstract public class Observer {
 
-    private Subject subject;
+    public Subject subject;
 
     abstract void update();
 
