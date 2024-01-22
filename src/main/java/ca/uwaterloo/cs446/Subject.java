@@ -12,5 +12,5 @@ public abstract class Subject {
         }
     }
     public abstract int getState();
-    public abstract void setState();
+    public abstract void setState(int state);
 }

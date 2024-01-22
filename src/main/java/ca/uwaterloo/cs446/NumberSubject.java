@@ -1,6 +1,6 @@
 package ca.uwaterloo.cs446;
 
-public class NumberSubject extends Subject{
+public class NumberSubject extends Subject {
     private int state = 0;
     public void NumberSubject(int state) {
         this.state = state;
