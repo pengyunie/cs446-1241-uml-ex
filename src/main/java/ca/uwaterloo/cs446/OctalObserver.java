@@ -6,6 +6,7 @@ public class OctalObserver extends Observer {
 
     public OctalObserver(Subject subject) {
         this.someSubject = subject;
+        this.someSubject.attach(this);
     }
 
     @Override
