@@ -2,9 +2,8 @@ package ca.uwaterloo.cs446;
 
 import java.util.ArrayList;
 
-public class Subject {
+public abstract class Subject {
     private ArrayList<Observer> observers;
-    private int state;
 
     public Subject() {
         observers = new ArrayList<>();
@@ -18,12 +17,8 @@ public class Subject {
         observers.forEach(o -> o.update());
     }
 
-    public int getState() {
-        return state;
-    }
+    public abstract int getState();
 
-    public void setState(int s) {
-        state = s;
-    }
+    public abstract void setState(int s);
 
 }
