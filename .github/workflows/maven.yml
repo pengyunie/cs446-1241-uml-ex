@@ -28,4 +28,6 @@ jobs:
         distribution: 'corretto'
         cache: maven
     - name: Build with Maven
-      run: mvn -B test --file pom.xml
+      run: mvn -B package --file pom.xml
+    - name: Display generated PlantUML
+      run: echo "Copy the following text (from @startuml to @enduml) to https://www.plantuml.com/ to view generated UML"; cat ./target/generated-docs/uml.plantuml
