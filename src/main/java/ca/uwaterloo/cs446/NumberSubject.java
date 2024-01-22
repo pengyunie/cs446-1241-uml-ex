@@ -5,9 +5,13 @@ abstract public class NumberSubject extends Subject {
     private int state;
 
     // constructor wtih an argument
-    abstract void NumberSubject(int state);
+    abstract void NumberSubject(int state){
+        this.state = state;
+    }
 
-    abstract int getState();
+    abstract int getState() {
+        return this.state;
+    }
 
     abstract void setState(int state) {
         this.state = state;
