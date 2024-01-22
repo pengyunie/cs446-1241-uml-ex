@@ -1,7 +1,7 @@
 package ca.uwaterloo.cs446;
 
 abstract public class OctalObserver extends Observer {
-    private String octValue;
+    private String octValue = "";
 
     // constructor wtih an argument
     abstract public OctalObserver(Subject subject) {
@@ -10,7 +10,7 @@ abstract public class OctalObserver extends Observer {
     }
 
     abstract void update() {
-        this.octValue = Integer.toOctalString(subject.getState())
+        this.octValue = Integer.toOctalString(subject.getState());
     }
 
     abstract String getValue() {

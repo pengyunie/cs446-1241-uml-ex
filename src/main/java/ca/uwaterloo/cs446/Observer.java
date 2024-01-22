@@ -2,7 +2,7 @@ package ca.uwaterloo.cs446;
 
 abstract public class Observer {
 
-    private Subject;
+    private Subject subject;
 
     abstract void update();
 

@@ -10,7 +10,7 @@ abstract public class Subject {
 
     abstract void sendNotice() {
         for (Observer observer : observers) {
-            observer.update()
+            observer.update();
         }
     }
 
