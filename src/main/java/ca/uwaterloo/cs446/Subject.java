@@ -8,7 +8,11 @@ abstract public class Subject {
         this.observers.add(observer);
     }
 
-    abstract void sendNotice();
+    abstract void sendNotice() {
+        for (Observer observer : observers) {
+            observer.update()
+        }
+    }
 
     abstract int getState();
 
