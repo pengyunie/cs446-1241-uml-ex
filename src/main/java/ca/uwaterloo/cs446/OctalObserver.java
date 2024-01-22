@@ -1,6 +1,6 @@
 package ca.uwaterloo.cs446;
 
-public class OctalObserver extends Observer{
+public class OctalObserver extends Observer {
     private String octValue;
     private Subject subject;
 
