@@ -7,6 +7,7 @@ public class OctalObserver extends Observer {
     public OctalObserver(Subject s) {
         super();
         subject = s;
+        subject.attach(this);
     }
 
     public void update() {
