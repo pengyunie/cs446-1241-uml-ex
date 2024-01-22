@@ -6,7 +6,7 @@ public class OctalObserver extends Observer{
 
     public OctalObserver(subject: Subject) {
         this.subject = subject;
-        subject.attach(this)
+        subject.attach(this);
     }
 
     public void update() {
